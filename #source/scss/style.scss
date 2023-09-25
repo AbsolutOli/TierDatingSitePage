@@ -1,0 +1,104 @@
+@import 'nullstyle.scss';
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Roboto;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #ffffff;
+}
+
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+/*HEADER*/
+.header {
+    width: 1300px;
+    min-height: 236px;
+    overflow: visible;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__imageContainer{
+        flex: 1 1 auto;
+        display: flex;
+    }
+
+    &__BackgroundImage{
+        background-image: url(https://images.top10.com/f_auto,fl_progressive:semi,q_auto/v1/production/charts/uploads/photo/Frame-100-3.20220607140717.20220714080445.jpg);
+        width: 100%;
+        height: 330px;
+        z-index: -1;
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    &__container{
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content{
+        flex: 1 1 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        flex: 1 1 auto;
+        margin-top: 40px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &__bottom {
+        align-self: start;
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+
+        background-color: rgba(0, 0, 0, 0.25);
+        
+        padding: 4px;
+
+        svg{
+            font-size: 14px;
+            path{
+                &:last-child{
+                    fill: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+
+        p{
+            font-size: 14px;
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}
+.check-mark {
+}
+.css-4qp2h0 {
+}
