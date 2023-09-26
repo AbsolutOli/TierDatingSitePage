@@ -884,6 +884,52 @@ h6 {
 .questions__topTenLogo {
   padding: 12px;
 }
+.questions__body {
+  max-width: 835px;
+  padding: 0;
+  width: 100%;
+}
+.questions__body h2 {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0 0 20px 0;
+}
+.questions__body h3 {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin: 0 0 20px 0;
+}
+.questions__body p {
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 27px;
+  word-wrap: break-word;
+  font-weight: 400;
+  color: #2d2d2d;
+}
+.questions__body strong {
+  font-weight: 600;
+  display: block;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2d2d2d;
+}
+.questions__body a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1789d5;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.questions__body a:hover {
+  color: #1564bf;
+}
 .questions::before {
   content: "";
   display: block;
