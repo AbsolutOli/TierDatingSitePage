@@ -1,0 +1,211 @@
+/*TOPPRODUCTS*/
+
+.topProducts {
+    margin-bottom: 20px;
+    
+    &__container{
+
+    }
+
+    &__body{
+        padding: 12px 16px 16px 16px;
+        background-color: #F5F5F5;
+    }
+
+    &__title {
+        color: #000000;
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+
+    &__products {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 12px;
+    }
+}
+.product {
+
+    
+    &__body {
+        position: relative;
+
+        height: 106px;
+        width: 100%;
+        min-width: 224px;
+        max-width: 400px;
+        padding: 16px 12px 12px 12px;
+
+        background-color: #ffffff;
+        color: #2D2D2D;
+
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+
+        transition: all 0.3s ease;
+
+        &_heighter{
+            height: 130px;
+            position: relative;
+
+            .product__top{
+                padding-top: 24px;
+                
+
+                .rating{
+                    top: 20px;
+                    right: 16px;
+                    position: absolute;
+                }
+            }
+            
+        }
+
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
+
+            .product__button{
+                p{
+                    color: #BC284B;
+                }
+                
+
+                svg{
+                    path{
+                        fill: #BC284B;
+                    }
+                }
+            }
+        }
+    }
+
+    &__ribbon{
+        display: inline-flex;
+        top: 7px;
+        width: initial;
+        height: 28px;
+        position: absolute;
+        left: -7px;
+
+        font-weight: 400;
+        font-size: 14px;
+        padding: 4px 8px;
+        background-color: #035D4C;
+        pointer-events: none;
+        align-items: center;
+        justify-content: initial;
+        color: #ffffff;
+
+        p{
+            font-weight: 600;
+            line-height: 20px;
+            color: #ffffff;
+
+            &::before{
+                content: '';
+                border-style: solid;
+                width: 0;
+                height: 0;
+                line-height: 0;
+                position: absolute;
+                top: -4px;
+                border-width: 4px 7px 0 0;
+                left: 0;
+                border-color: transparent #2D2D2D transparent transparent;
+            }
+        }
+    }
+
+    &__top {
+        margin-bottom: auto;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+    }
+
+    &__logo {
+    }
+
+    &__title {
+        flex-grow: 1;
+        flex-shrink: 1;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    &__rating {
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__members{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        white-space: nowrap;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 4px;
+        min-width: 100px;
+
+        transition: all 0.3s ease;
+        p{
+            margin: 0;
+            color: #FF4A64;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 13px;
+        }
+    }
+}
+.rating {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+
+    &__info {
+        text-align: end;
+    }
+
+    &__name {
+        color: #1564BF;
+        font-weight: 600;
+        line-height: 14px;
+        max-width: 108px;
+        text-transform: capitalize;
+        font-size: 16px;
+    }
+
+    &__stars {
+        text-align: end;
+    }
+
+    &__score {
+        background: #1564BF;
+        padding: 1px 4px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        min-width: 28px;
+        justify-content: center;
+
+        p{
+        color: white;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        font-weight: 700;
+        }
+    }
+}
