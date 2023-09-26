@@ -18,6 +18,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+
+    position: relative;
 }
 
 .main {
@@ -46,7 +48,7 @@ body {
         background-image: url(https://images.top10.com/f_auto,fl_progressive:semi,q_auto/v1/production/charts/uploads/photo/Frame-100-3.20220607140717.20220714080445.jpg);
         width: 100%;
         height: 330px;
-        z-index: -1;
+        z-index: 0;
         display: block;
         position: absolute;
         background-size: cover;
@@ -58,6 +60,8 @@ body {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
+        position: relative;
+
     }
 
     &__content{
@@ -72,6 +76,9 @@ body {
         margin-top: 40px;
         font-size: 28px;
         font-weight: 700;
+        p{
+            color: #ffffff;
+        }
     }
 
     &__bottom {
@@ -97,6 +104,7 @@ body {
 
         p{
             font-size: 14px;
+            color: #ffffff;
             span{
                 font-weight: 500;
             }
@@ -107,6 +115,8 @@ body {
 /*TOPPRODUCTS*/
 
 .topProducts {
+    margin-bottom: 20px;
+    
     &__container{
 
     }
@@ -173,7 +183,10 @@ body {
             box-shadow: 0 10px 10px rgb(0 0 0 / 25%);
 
             .product__button{
-                color: #BC284B;
+                p{
+                    color: #BC284B;
+                }
+                
 
                 svg{
                     path{
@@ -204,6 +217,7 @@ body {
         p{
             font-weight: 600;
             line-height: 20px;
+            color: #ffffff;
 
             &::before{
                 content: '';
@@ -257,11 +271,12 @@ body {
         align-items: center;
         justify-content: flex-end;
         column-gap: 4px;
-        color: #FF4A64;
         min-width: 100px;
 
         transition: all 0.3s ease;
         p{
+            margin: 0;
+            color: #FF4A64;
             font-size: 14px;
             font-weight: 700;
             line-height: 13px;
