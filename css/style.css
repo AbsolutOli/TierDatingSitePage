@@ -849,6 +849,51 @@ h6 {
   color: #1789D5;
 }
 
+.questions {
+  display: block;
+  padding: 40px 0 0;
+  width: 100%;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+.questions__topTen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  word-break: break-word;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #F5F5F5;
+  max-width: 835px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+.questions__topTen p {
+  padding: 12px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  word-break: break-word;
+  color: #797979;
+}
+.questions__topTenLogo {
+  padding: 12px;
+}
+.questions::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -5px;
+  border-top: 1px solid #d5d5d5;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
