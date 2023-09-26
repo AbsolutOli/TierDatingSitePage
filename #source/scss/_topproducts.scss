@@ -84,40 +84,9 @@
     }
 
     &__ribbon{
-        display: inline-flex;
-        top: 7px;
-        width: initial;
-        height: 28px;
-        position: absolute;
-        left: -7px;
-
-        font-weight: 400;
-        font-size: 14px;
-        padding: 4px 8px;
         background-color: #035D4C;
-        pointer-events: none;
-        align-items: center;
-        justify-content: initial;
-        color: #ffffff;
-
-        p{
-            font-weight: 600;
-            line-height: 20px;
-            color: #ffffff;
-
-            &::before{
-                content: '';
-                border-style: solid;
-                width: 0;
-                height: 0;
-                line-height: 0;
-                position: absolute;
-                top: -4px;
-                border-width: 4px 7px 0 0;
-                left: 0;
-                border-color: transparent #2D2D2D transparent transparent;
-            }
-        }
+        top: 7px;
+        left: -7px;
     }
 
     &__top {
