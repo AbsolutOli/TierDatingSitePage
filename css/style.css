@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -92,8 +90,6 @@ p {
   margin: 0;
 }
 
-/*--------------------*/
-/*TOPPRODUCTS*/
 .topProducts {
   margin-bottom: 20px;
 }
@@ -277,7 +273,6 @@ p {
   font-weight: 700;
 }
 
-/*CONTENT*/
 .content__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1471,7 +1466,6 @@ body {
   position: relative;
 }
 
-/*HEADER*/
 .header {
   width: 1300px;
   min-height: 236px;
@@ -1849,17 +1843,6 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #ffffff;
-}
-
-.wrapLine {
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(226, 226, 226, 0.25)), color-stop(50%, rgba(226, 226, 226, 0.8)), to(rgba(226, 226, 226, 0.25)));
-  background: linear-gradient(90deg, rgba(226, 226, 226, 0.25) 0%, rgba(226, 226, 226, 0.8) 50%, rgba(226, 226, 226, 0.25) 100%);
-  height: 1px;
-}
-.wrapLine__marginBottom {
-  margin-bottom: 52px;
-  background: rgb(226, 226, 226);
 }
 
 @-webkit-keyframes scoreCardAnim {
