@@ -88,6 +88,10 @@ h6 {
   font-weight: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 /*--------------------*/
 /*TOPPRODUCTS*/
 .topProducts {
@@ -420,6 +424,7 @@ h6 {
   font-weight: 500;
   line-height: 21px;
   color: #2D2D2D;
+  margin: 0;
 }
 .chartItem__reviews {
   font-size: 14px;
@@ -513,57 +518,6 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
-.chartItem__visit a {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 140px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: #FF4A64;
-  border: none;
-  padding: 12px 20px;
-  height: 40px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-.chartItem__visit a span {
-  font-weight: 600;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 3.2;
-}
-.chartItem__visit a:hover {
-  background-color: #BC284B;
-}
-.chartItem__visit a:hover .chartItem__arrowSvg {
-  opacity: 1;
-  -webkit-margin-start: 8px;
-          margin-inline-start: 8px;
-}
-.chartItem__arrowSvg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  opacity: 0;
-  -webkit-margin-start: -12px;
-          margin-inline-start: -12px;
-  -webkit-transition: opacity ease 0.3s, margin ease 0.3s;
-  transition: opacity ease 0.3s, margin ease 0.3s;
-}
-.chartItem__arrowSvg svg {
-  font-weight: 400;
-  font-size: 12px;
-  color: #ffffff;
-}
 
 .rating_moreInfo {
   cursor: pointer;
@@ -653,6 +607,16 @@ h6 {
   font-weight: 400;
   color: #39393a;
 }
+.sidepanel__countSingles h3 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 167px;
+  letter-spacing: 1px;
+  color: #39393a;
+  margin: 0;
+}
 .sidepanel__count {
   font-size: 20px;
   font-weight: 500;
@@ -671,6 +635,10 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 28px;
+}
+.sidepanel__articlesBlock h4 {
+  font-family: Roboto;
+  margin: 0;
 }
 .sidepanel__mustRead {
   font-size: 18px;
@@ -703,6 +671,7 @@ h6 {
   line-height: 22px;
   margin-bottom: 16px;
   color: #2D2D2D;
+  font-family: Roboto;
 }
 .sidepanel__advantages {
   display: -webkit-box;
@@ -748,6 +717,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 28px;
+  margin: 0;
 }
 .article__body {
   width: 100%;
@@ -853,7 +823,7 @@ h6 {
   display: block;
   padding: 40px 0 0;
   width: 100%;
-  margin: 0 10px 0 0;
+  margin: 0 10px 60px 0;
   position: relative;
 }
 .questions__topTen {
@@ -895,6 +865,9 @@ h6 {
   font-weight: 700;
   color: #2d2d2d;
   margin: 0 0 20px 0;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: Roboto;
 }
 .questions__body h3 {
   font-size: 16px;
@@ -1251,7 +1224,7 @@ body {
   color: white;
   font-size: 14px;
   background: rgb(21, 100, 191);
-  padding: initial;
+  padding-top: 2px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0px;
@@ -1292,6 +1265,69 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.visitButton a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 140px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #FF4A64;
+  border: none;
+  padding: 12px 20px;
+  height: 40px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.visitButton a span {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 3.2;
+}
+.visitButton a:hover {
+  background-color: #BC284B;
+}
+.visitButton a:hover .visitButton__arrowSvg {
+  opacity: 1;
+  -webkit-margin-start: 8px;
+          margin-inline-start: 8px;
+}
+.visitButton__arrowSvg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  -webkit-margin-start: -12px;
+          margin-inline-start: -12px;
+  -webkit-transition: opacity ease 0.3s, margin ease 0.3s;
+  transition: opacity ease 0.3s, margin ease 0.3s;
+}
+.visitButton__arrowSvg svg {
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.wrapLine {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(226, 226, 226, 0.25)), color-stop(50%, rgba(226, 226, 226, 0.8)), to(rgba(226, 226, 226, 0.25)));
+  background: linear-gradient(90deg, rgba(226, 226, 226, 0.25) 0%, rgba(226, 226, 226, 0.8) 50%, rgba(226, 226, 226, 0.25) 100%);
+  height: 1px;
+}
+.wrapLine__marginBottom {
+  margin-bottom: 52px;
+  background: rgb(226, 226, 226);
 }
 
 @-webkit-keyframes scoreCardAnim {
